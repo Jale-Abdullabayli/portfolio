@@ -36,9 +36,16 @@
         }
     }
     
+    .content {
+        position: relative;
+        min-height: 100vh;
+        padding-top: 70px;
+        padding-bottom: 100px;
+    }
+    
     .main {
         width: 85%;
-        margin: 70px auto 50px;
+        margin: 0 auto;
         .items {
             width: 50%;
             margin: 0 auto;
@@ -285,6 +292,10 @@
     }
     
     footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
         background-color: $primaryColor;
         padding: 20px;
         text-align: center;
@@ -368,7 +379,7 @@
         }
     }
     
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 994px) {
         .main {
             .items {
                 width: 70%;
@@ -379,7 +390,6 @@
                         .description {
                             >div {
                                 grid-template-columns: 1fr;
-                                .text {}
                                 &.what {
                                     img {
                                         order: -1;
@@ -416,9 +426,11 @@
         header {
             height: 60vh;
         }
+        .content {
+            padding-top: 0;
+        }
         .main {
             width: 95%;
-            margin-top: 0;
             .items {
                 width: auto;
                 background-color: $primaryColor;
@@ -463,6 +475,9 @@
     }
     
     @media only screen and (max-width: 576px) {
+        .content {
+            padding-bottom: 280px;
+        }
         .main {
             width: 98%;
             .items {

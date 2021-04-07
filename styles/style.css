@@ -39,9 +39,16 @@ header video {
      object-fit: cover;
 }
 
+.content {
+  position: relative;
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
 .main {
   width: 85%;
-  margin: 70px auto 50px;
+  margin: 0 auto;
 }
 
 .main .items {
@@ -381,6 +388,10 @@ header video {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #FFBB05;
   padding: 20px;
   text-align: center;
@@ -459,7 +470,7 @@ footer .links a.active {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 994px) {
   .main .items {
     width: 70%;
   }
@@ -498,9 +509,11 @@ footer .links a.active {
   header {
     height: 60vh;
   }
+  .content {
+    padding-top: 0;
+  }
   .main {
     width: 95%;
-    margin-top: 0;
   }
   .main .items {
     width: auto;
@@ -544,6 +557,9 @@ footer .links a.active {
 }
 
 @media only screen and (max-width: 576px) {
+  .content {
+    padding-bottom: 280px;
+  }
   .main {
     width: 98%;
   }
